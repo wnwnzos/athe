@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* athe 서브 페이지 CSS - notice.css */
+
+/*공통파일 불러오기*/
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(media.css);
+
+
+
+
+
+
+/*공지사항영역*/
+.notice {
+    padding-top: 11%;
+    padding-bottom: 30%;
+}
+
+.notice h2 {
+    text-align: center;
+    font-weight: 1;
+    letter-spacing: 1px;
+    font-size: 4.3125rem;
+    padding-bottom: 67px;
+}
+
+.notice_list {
+    color: #605e5e;
+    width: 76%;
+    margin: 0 auto;
+
+
+}
+
+.notice_list li {
+    position: relative;
+    font-size: 1rem;
+    padding: 24px 0 24px 0;
+    border-bottom: 1px solid #e5e5e5;
+    float: none;
+}
+
+.notice_list li:first-child {
+    border-top: 2px solid #605e5e;
+}
+
+.notice_list .txt{
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.notice_list p{
+    padding: 30px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+    color: #666;
+    font-size: 1rem;
+}
+
+/*새소식상자*/
+.notice_list li span {
+    border: 1px solid #707070;
+    padding: 3px 13px;
+    font-size: 1rem;
+    margin-right: 17px;
+}
+
+/*플러스버튼*/
+.pbtn{
+    position: absolute;
+    right: 5px;
+    top: 30%;
+    
+    cursor: pointer;
+}
+
+
+.notice_list i img {
+    width: 15px;
+}
+
+

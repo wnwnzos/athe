@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*전체사이트 핵심공통*/
+
+
+
+/*스크롤바*/
+.wrap::-webkit-scrollbar {
+    width: 5px;
+}
+
+.wrap::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 5px;
+}
+
+.wrap::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.wrap{
+    scrollbar-face-color: #333;
+    scrollbar-shadow-color: #000;
+    scrollbar-highlight-color: #666;
+    scrollbar-3dlight-color: #fff;
+    scrollbar-darkshadow-color: #fff;
+    scrollbar-track-color: #000;
+    scrollbar-arrow-color: #868686;
+}
+
+
+/*사이트 전체설정*/
+body {
+/*    overflow: hidden;*/
+    width: 100%;
+    height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    /*글자기본크기 16px을 변경함*/
+    letter-spacing: -1px;
+    /*글자간격(기본값은 0)*/
+   
+}
+
+
+/*IR(Image Replacement)-이미지설명요소 등 안보이게 처리*/
+.bld {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+}

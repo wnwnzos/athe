@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* athe 서브 페이지 CSS - product_sub.css */
+
+/*공통파일 불러오기*/
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(media.css);
+
+
+/*헤더영역*/
+.sub_header {
+    background-color: #F0F1F1;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.wrap_cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 85, 85, 0.63);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+    overflow-y: ;
+}
+
+/*성분박스*/
+.igr {
+    position: fixed;
+    width: 500px;
+    height: 100%;
+    right: -500px;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 3;
+
+}
+
+.igr_head {
+    border-bottom: 1px solid #ccc;
+    height: 54px;
+    position: relative;
+}
+
+/*닫기버튼*/
+.cbtn {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/cbtn.png)no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.igr h4 {
+    width: calc(100% - 15px);
+    margin-right: 15px;
+    position: relative;
+    line-height: 54px;
+    font-size: 1.25rem;
+    padding-left: 30px;
+
+
+    font-weight: normal;
+}
+
+.igr_text {
+    padding: 30px;
+}
+
+
+/*제품박스*/
+.prwrap {
+    /*    outline: 1px solid #000;*/
+    width: 50%;
+    height: 340px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 1200px;
+}
+
+.prbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+/*공통li*/
+.prbox li {
+    width: 50%;
+    float: none;
+}
+
+/*립밤이미지*/
+.prbox li:first-child img {
+    width: 50px;
+}
+
+.prbox li:first-child {
+    padding-left: 22%;
+}
+
+/*제품박스 오른쪽 설명글*/
+
+.prtxt h2 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 1;
+}
+
+.prtxt p {
+    margin-bottom: 25px;
+    font-size: 1.125rem;
+    color: #484747;
+}
+
+.prtxt small {
+    display: block;
+    margin-top: 30px;
+    color: #8F8E8E;
+    font-size: 1.125rem;
+}
+
+.prtxt a {
+    display: inline-block;
+    font-size: 0.9375rem;
+    padding: 20px 60px;
+}
+
+/*전성분보기버튼*/
+.pline {
+    border: 1px solid #707070;
+
+    margin-right: 30px;
+}
+
+.pline:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+/*구매하러가기버튼*/
+.pbg {
+    background-color: #070707;
+    color: #fff;
+
+}
+
+.pbg:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+/*상세페이지내용********************/
+.lip_page {
+    /*    outline: 1px solid #000;*/
+    width: 70%;
+    margin: 54px auto 14% auto;
+}
+
+.lip_page ul {
+    margin-bottom: 20%;
+    /*    outline: 1px solid #000;*/
+}
+
+.lip_page li {
+    width: 50%;
+}
+
+.lip_page h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 1;
+    margin: 13% 0 13% 0;
+
+}
+
+
+.lip_txt {
+    padding-top: 10%;
+}
+
+.lip_txt h3 {
+    font-size: 2.125rem;
+    font-weight: normal;
+    font-family: 'iropke batang', sans-serif;
+    margin-bottom: 30px;
+}
+
+.lip_txt p {
+    color: #8F8E8E;
+    font-size: 1.25rem;
+    font-weight: 1;
+}
+
+
+.fbox img {
+    width: 483px;
+    height: 280px;
+}
+
+.sbox img {
+    width: 574px;
+    height: 354px;
+}
+
+.tbox img {
+    width: 458px;
+    height: 452px;
+}

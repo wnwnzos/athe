@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* athe 서브 페이지 CSS - product.css */
+
+/*공통파일 불러오기*/
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(media.css);
+
+
+.product {
+    padding-top: 11%;
+    padding-bottom: 20%;
+}
+
+.product h2 {
+    text-align: center;
+    font-weight: 1;
+    letter-spacing: 1px;
+    font-size: 4.3125rem;
+    padding-bottom: 67px;
+}
+
+/*제품들*/
+
+/*공통*/
+.prl_list {
+    width: 349px;
+    height: 394px;
+    position: relative;
+    cursor: pointer;
+}
+/*오버시 박스*/
+.cover{opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(206, 203, 203, 0.73);
+}
+
+/*상세보기박스*/
+.prl_list a{display: none;
+    border-radius: 5px;
+    border: 2px solid  rgba(57, 49, 49, 0.52);
+    text-align: center;
+    width: 50%;
+    height: 55px;
+    line-height: 55px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.06rem;
+    color: #4e4d4d;
+    z-index: 1;
+    font-weight: bold;
+   
+}
+
+.prl {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* outline: 1px solid #000; */
+    width: 75%;
+    margin: 0 auto;
+}
+.prl li{
+    float: none;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.prl li:nth-child(3){
+    margin-right: 0;
+}
+.prl li:nth-child(4),.prl li:nth-child(5){
+    margin-bottom: 0;
+}
+.prl li:nth-child(6){
+    margin: 0;
+}
+/*립밤*/
+.lip {
+    background: url(../images/lip_white.png)no-repeat;
+    background-size: 50px;
+    background-position: center;
+    background-color: #F0F1F1;
+}
+/*선에센스*/
+.essence{
+    background: url(../images/sun_essence.png)no-repeat;
+    background-size: 80px;
+    background-position: center;
+    background-color: #F0F1F1;
+}
+/*클렌저*/
+.cleanser{
+    background: url(../images/cleanser.png)no-repeat;
+    background-size: 70px;
+    background-position: center;
+    background-color: #F0F1F1;
+}
+/*치크*/
+.ceek{
+   background: url(../images/cheek.png)no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-color: #F0F1F1; 
+}
+/*세럼*/
+.serum{
+   background: url(../images/serum.png)no-repeat;
+    background-size: 75px;
+    background-position: center;
+    background-color: #F0F1F1;  
+}
+/*선쿠션*/
+.cushion{
+    background: url(../images/cushion.png)no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #F0F1F1;  
+}
+
+
+/*텍스트박스*/
+.ptxt {
+    text-align: center;
+    width: 349px;
+    height: 130px;
+    background-color: rgba(248, 216, 211, 0.82);
+    color: #444;
+}
+.ptxt h4{
+    font-family: 'iropke batang', sans-serif;
+    font-size: 1.125rem;
+    padding: 15px;
+    color: #000;
+}
+

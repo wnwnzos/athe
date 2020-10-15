@@ -1,0 +1,595 @@
+/*메인 미디어쿼리 - media.css*/
+/*피시*/
+@media only screen and (max-width: 1024px) {
+
+    html {
+        font-size: 13px;
+    }
+
+
+    /*로고사이즈*/
+    .logo img {
+        width: 27%;
+    }
+
+    /*오른쪽 햄버거사이즈*/
+    .hamburger {
+        width: 46px;
+        height: 19px;
+    }
+
+
+    /*메뉴클릭팝업창*/
+
+    .menu {
+
+        background-position: 15%;
+
+    }
+
+    .mlist li {
+        font-size: 65px;
+
+    }
+
+    .mlist {
+
+        margin-top: 14%;
+        margin-left: 53%;
+    }
+
+    section {
+        margin-bottom: 0;
+    }
+
+
+    #ban {
+
+        height: 378px;
+    }
+
+
+
+    /*자연주의*****************************/
+    .nature {
+        position: relative;
+        margin-top: 10%;
+    }
+
+    .nat_box li {
+        height: 500px;
+    }
+
+    .nat_img {
+        background: url(../images/ni.jpg) no-repeat 100% 100%;
+        background-size: cover;
+    }
+
+
+
+
+    /*아떼*********************************************/
+
+
+
+
+    .athe_box li {
+        height: 500px;
+    }
+
+
+    .athe_img {
+        background: url(../images/pink_pact.jpg) no-repeat 50% 100%;
+        background-size: cover;
+    }
+
+
+
+    /*왼쪽식물*/
+    .plant_left {
+        /*        display: none;*/
+        background: url(../images/plant_left.png)no-repeat;
+        background-size: 41%;
+        width: 100%;
+        height: 151%;
+        top: 30%;
+
+    }
+
+    /*오른쪽식물*/
+    .plant_right {
+        /*        display: none;*/
+        background: url(../images/plant_right.png)no-repeat;
+        background-size: cover;
+        width: 39%;
+        height: 150%;
+        right: 0;
+        top: -31%;
+
+    }
+
+    .plt {
+        padding-top: 5%;
+    }
+
+    .pbox {
+
+        height: 620px;
+
+    }
+
+    .pbox_list {
+
+        margin-top: 8%;
+
+    }
+
+    /*양쪽버튼 위치조정*/
+    .abtn {
+
+        top: 88%;
+
+    }
+
+    .pbox_txt p {
+        top: 117%;
+        font-size: 13px;
+
+    }
+
+
+    /*리뷰영역*/
+    .review {
+
+        height: 50%;
+    }
+
+    .review_all {
+        padding: 15px 83px 15px 20px;
+
+    }
+
+    .scroll {
+        left: 59%;
+        width: 3.6vw;
+        bottom: 7%;
+    }
+
+    @keyframes scl {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            left: 63%;
+            opacity: 0;
+        }
+    }
+
+    /*화살표*/
+    .retit {
+        height: 85px;
+    }
+
+    /*인스타그램영역*/
+    .instar {
+
+        display: none;
+    }
+
+}
+
+/*피시*/
+
+
+
+
+
+
+/*태블릿*/
+@media only screen and (max-width:768px) {
+
+    html {
+        font-size: 12px;
+    }
+
+
+    /*헤더영역*/
+    header {
+        height: 317px;
+    }
+
+    .mouse {
+        display: none;
+    }
+
+    /*메뉴클릭시팝업창*/
+    .mlist li {
+        font-size: 55px;
+    }
+
+    .mlist {
+        margin-top: 23%;
+        margin-left: 56%;
+    }
+
+
+
+    /*배너*/
+    #ban {
+        height: 287px;
+    }
+
+    /*자연주의*/
+    .sbox {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nature img {
+        display: none;
+    }
+
+    .nat_box li > .txt {
+        margin: 15% 0 0 37%;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+
+    .nat_img {
+        background: url(../images/moblie_img/ni.jpg) no-repeat;
+        background-size: 100%;
+        margin: -18% 0 0 19%;
+        order: 20;
+    }
+
+    .natline {
+
+        height: 87%;
+    }
+
+
+
+    /*아떼*/
+    .athe img {
+        display: none;
+    }
+
+    .athe_box li {
+        height: 400px;
+    }
+
+    .athe_box li > .txt {
+        margin: -59% 0 0 34%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .athe_img {
+        background: url(../images/moblie_img/pink_pact.jpg) no-repeat;
+        background-size: 100%;
+        margin: -34% 0 0 14%;
+        order: 2;
+    }
+
+    .atheline {
+        margin: -4% 0 0 6%;
+        width: 100%;
+        height: 87%;
+    }
+
+    /*제품리스트*/
+    .pbox {
+        height: 490px;
+    }
+
+
+    .products_list {
+
+        margin-top: -14%;
+    }
+
+    .plant_left {
+        top: 34%;
+    }
+
+
+    /*리뷰*/
+    .review {
+        height: 39%;
+    }
+
+    .pbox_inner .pbox_list::before {
+
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .pbox_inner .pbox_list.on > span::before {
+        width: 43%;
+
+    }
+
+    .pbox_inner .pbox_list.on > span::after {
+
+        right: 46%;
+
+    }
+
+    .pbox_list {
+        margin-top: 4%;
+    }
+
+
+    .abtn {
+        top: 83%;
+    }
+
+    .pbox_txt h4 {
+        margin-top: 0;
+
+    }
+
+
+    .pbox_txt p {
+        top: 103%;
+        font-size: 10px;
+    }
+
+
+    .pbox_img img {
+        height: 170px;
+    }
+
+    .pbox_img {
+
+        margin: 14% auto 10px auto;
+    }
+
+
+    /*푸터영역*/
+    .lbox img {
+        width: 50%;
+    }
+
+    .cotus {
+        font-size: 18px;
+    }
+
+    .cotus big {
+        font-size: 18px;
+    }
+
+    .lbox span {
+        width: 95%;
+        height: 40px;
+        font-size: 15px;
+        line-height: 40px;
+        margin-top: 7%;
+    }
+
+
+}
+
+/*태블릿*/
+
+
+
+
+@media only screen and (max-width:480px) {
+    html {
+        font-size: 10px;
+    }
+
+    /*로고*/
+    .logo img {
+        width: 20%;
+    }
+
+    /*햄버거메뉴*/
+    .hamburger {
+        width: 30px;
+        height: 15px;
+    }
+
+    /*배너*/
+    #ban {
+        height: 176px;
+    }
+
+    /*배너글*/
+    #tit {
+        font-size: 11px;
+        line-height: 1.4;
+
+    }
+
+    /*자연주의*/
+
+
+    .nature {
+
+        margin-top: 0;
+    }
+
+    .natline {
+        display: none;
+    }
+
+    .nat_box li > .txt {
+        margin: 13% 0 0 10%;
+
+    }
+
+    .txt h2 {
+
+        left: 50%;
+        margin-bottom: 30px;
+
+    }
+
+
+    .nat_box h2 {
+        left: 44%;
+    }
+
+    .txt p {
+        font-size: 15px;
+        line-height: 22px;
+        left: 10%;
+        text-align: center;
+    }
+
+    .nat_box li {
+        width: 40%;
+        height: 425px;
+
+    }
+
+    .nat_img {
+
+        margin: -35% 0 0 8%;
+    }
+
+
+    /*아떼*/
+    .atheline {
+        display: none;
+    }
+
+
+    .athe_img {
+        background-size: 100%;
+        margin: -30% 0 0 8%;
+    }
+
+
+    .athe_box li {
+        width: 40%;
+        height: 425px;
+
+    }
+
+    .athe_box li > .txt {
+        margin: -29% 0 0 11%;
+
+    }
+
+    /*제품리스트*/
+    .pbox {
+
+        width: 100%;
+        height: 446px;
+
+    }
+
+    /*왼쪽식물*/
+    .plant_left {
+        top: 46%;
+    }
+
+    .products_list {
+        margin-top: -60%;
+    }
+
+    /*플러스버튼위치조정*/
+    .pbox_inner .pbox_list.on > span::after {
+        right: 32%;
+    }
+
+    /*제품들위치조정*/
+    .cheekimg {
+
+        left: -45px;
+    }
+
+    .cushionimg {
+
+        left: -53px;
+
+    }
+
+    .cleanserimg {
+        left: 16px;
+    }
+
+    .pbox_list {
+        margin-top: 12%;
+    }
+
+    .pbox_txt h4 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .pbox_txt p {
+        top: 111%;
+
+    }
+
+    /*양쪽버튼*/
+    .abtn {
+        width: 7%;
+    }
+
+    .lb {
+        left: 25%;
+    }
+
+    .rb {
+        right: 25%;
+    }
+
+
+    /*리뷰*/
+    .review {
+        height: 22%;
+    }
+
+    .retit {
+        font-size: 13px;
+        height: 47px;
+
+    }
+
+
+    .review_all {
+        padding: 6px 60px 6px 11px;
+        border: 1px solid #767274;
+        font-size: 10px;
+    }
+
+    .scroll {
+        left: 58%;
+        bottom: 3%;
+        opacity: 1;
+        animation: none;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+/*모바일*/
+@media only screen and (max-width:360px) {
+    header {
+        height: 220px;
+    }
+
+
+
+
+
+
+}
