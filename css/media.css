@@ -173,9 +173,47 @@
 
     /*인스타그램영역*/
     .instar {
+        margin: 15% 0;
 
+        /*        display: none;*/
+    }
+
+    /*인스타그램 뒷배경 없애기*/
+    .bg_instagram {
         display: none;
     }
+
+    /*호버시없애기*/
+    .instar_cover {
+        display: none;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 480px;
+        right: 0;
+        top: 100%;
+
+    }
+
+    .swiper-scrollbar {
+        display: none;
+    }
+
+    .instar h2 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -59px;
+
+    }
+
+    /*왼쪽,오른쪽버튼 보이기*/
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+    }
+
 
 }
 
@@ -358,17 +396,17 @@
     }
 
     .cotus {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .cotus big {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .lbox span {
-        width: 95%;
+        width: 85%;
         height: 40px;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 40px;
         margin-top: 7%;
     }
@@ -382,6 +420,10 @@
 
 
 @media only screen and (max-width:480px) {
+    header {
+    height: 200px;
+}
+    
     html {
         font-size: 10px;
     }
@@ -398,10 +440,9 @@
     }
 
     /*배너*/
-    #ban {
-        height: 176px;
-    }
-
+   #ban {
+    height: 145px;
+}
     /*배너글*/
     #tit {
         font-size: 11px;
@@ -422,27 +463,24 @@
     }
 
     .nat_box li > .txt {
-        margin: 13% 0 0 10%;
+        margin: 13% 0 0 0;
 
     }
 
     .txt h2 {
 
-        left: 50%;
+        left: 0;
         margin-bottom: 30px;
 
     }
 
 
-    .nat_box h2 {
-        left: 44%;
-    }
+
 
     .txt p {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 22px;
-        left: 10%;
-        text-align: center;
+        left: 0;
     }
 
     .nat_box li {
@@ -453,19 +491,25 @@
 
     .nat_img {
 
-        margin: -35% 0 0 8%;
+        margin: -35% 0 0 2%;
+        background-size: 85%;
     }
 
 
     /*아떼*/
+    .athe {
+
+    margin-top: 130px;
+
+}
     .atheline {
         display: none;
     }
 
 
     .athe_img {
-        background-size: 100%;
-        margin: -30% 0 0 8%;
+        background-size: 84%;
+        margin: -32% 0 0 4%;
     }
 
 
@@ -476,7 +520,7 @@
     }
 
     .athe_box li > .txt {
-        margin: -29% 0 0 11%;
+        margin: -29% 0 0 0;
 
     }
 
@@ -583,9 +627,98 @@
 
 /*모바일*/
 @media only screen and (max-width:360px) {
-    header {
-        height: 220px;
+    html {
+        font-size: 8px;
     }
+
+    /*헤더영역*/
+    header {
+        height: 151px;
+    }
+
+    /*로고*/
+    .logo {
+        left: 2%;
+        top: 3%;
+    }
+
+    .logo img {
+        width: 15%;
+    }
+
+    /*햄버거버튼*/
+    .hamburger {
+        width: 21px;
+        height: 14px;
+    }
+
+    .hamburger div {
+
+        height: 2px;
+
+    }
+
+    .hamburger {
+        right: 3%;
+        top: 3%;
+    }
+
+    /*동영상*/
+    #video_bg {
+
+        object-fit: cover;
+    }
+
+
+    /*배너*/
+    #ban {
+        height: 133px;
+    }
+
+    /*자연주의*/
+    .nat_box li > .txt {
+        margin: 10% 0 0 0;
+        width: 100%;
+    }
+
+    .nat_box li > .txt h2 {
+        left: 0;
+
+    }
+
+    .nat_box li > .txt p {
+        left: 0;
+        font-size: 13px;
+    }
+
+    .nat_img {
+        margin: -30% 0 0 1%;
+        background-size: 74%;
+    }
+
+    /*아떼*/
+    .athe_box li > .txt {
+        margin: -88% 0 0 0;
+        width: 100%;
+
+    }
+
+    .athe_box li > .txt h2 {
+        left: 0;
+
+    }
+
+    .athe_box li > .txt p {
+        left: 0;
+        font-size: 13px;
+    }
+
+    .athe_img {
+        margin: -58% 0 0 5%;
+        background-size: 70%;
+    }
+
+
 
 
 

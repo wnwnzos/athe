@@ -2,9 +2,9 @@ $(function () { // jQB ///////////////////////////
 
 
 
-// 1. 자연주의 이미지
+    // 1. 자연주의 이미지
     $(".nat_img").parallax("30%", 0.2);
-// 2. 아떼 이미지
+    // 2. 아떼 이미지
     $(".athe_img").parallax("100%", 0.2);
 
     /*상단배너자동넘김*****************************/
@@ -148,6 +148,43 @@ $(function () { // jQB ///////////////////////////
         // 반복여부
         loop: true
     });
+
+
+
+
+
+
+    var mob = 0;
+    if ($(window).width() < 1025) mob = 1;
+    console.log("모바일?" + mob);
+
+
+    // 모바일일때 BEST ITEM 리스트에 Swiper 플러그인 적용하기!
+    if (mob) {
+
+        $('.swiper-wrapper').css({
+            flexWrap: "nowrap"
+        });
+        $('.swiper-slide').css({
+            display: "flex",
+            height: "auto"
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+
+            spaceBetween: 20,
+            navigation: { // 네비게이션 설정
+                nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+                prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+            }
+            
+        });
+
+    } ////// if ////////////////////////////////////////
+
+
+
+
 
 
 

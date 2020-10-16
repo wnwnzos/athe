@@ -205,27 +205,28 @@ footer {
 
 /*푸터왼쪽박스*/
 .lbox img {
-    margin: 10px 0;
+    margin: 26px 0 0 0;
+    width: 50%;
 }
 
 .cotus {
-    font-size: 1.43rem;
+    font-size: 1.25rem;
     letter-spacing: 2px;
 }
 
 .cotus big {
     display: block;
-    font-size: 1.875rem;
+    font-size: 1.25rem;
 }
 
 .lbox span {
-    width: 145px;
-    height: 47px;
+    width: 96%;
+    height: 32px;
     display: block;
     border: 1px solid #fff;
     text-align: center;
-    font-size: 1.1875rem;
-    line-height: 47px;
+    font-size: 0.9375rem;
+    line-height: 32px;
 
 }
 
@@ -235,7 +236,7 @@ footer {
 
 /*푸터중간박스*/
 .mbox {
-    margin-top: 40px;
+    margin-top: 37px;
     line-height: 2;
     font-size: 15px;
 }
@@ -244,25 +245,27 @@ footer {
     font-style: normal;
 }
 
-.copyright {
-    margin-top: 44px;
-}
+
 
 /*푸터오른쪽박스*/
 .rbox {
-
+    position: relative;
+    width: 26%;
     /*    outline: 1px solid #000;*/
     text-align: right;
 }
 
-/*위로퀵버튼*/
-.top_btn {
-    display: block;
-    margin-bottom: 20%;
-    margin-top: 2px;
-}
+
+
+
 
 /*sns*/
+.sns_box {
+    position: absolute;
+    left: 4px;
+    bottom: 10%;
+}
+
 .sns_box a {
     margin-bottom: 20px;
     margin-right: 10px;
@@ -284,7 +287,9 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.9375rem;
-
+    position: absolute;
+    left: 0;
+    bottom: 2%;
 }
 
 .link li {
@@ -298,3 +303,23 @@ footer {
 .link a {
     color: #fff;
 }
+
+
+/*위로퀵버튼*/
+.top_btn {
+    display: block;
+    position: absolute;
+    right: -22%;
+    top: 0;
+    animation: tbtn 1.5s infinite;
+    top: 15px;
+}
+
+
+@keyframes tbtn {
+    from {}
+
+    to {
+        top: 0;
+
+    }
