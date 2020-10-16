@@ -421,9 +421,9 @@
 
 @media only screen and (max-width:480px) {
     header {
-    height: 200px;
-}
-    
+        height: 200px;
+    }
+
     html {
         font-size: 10px;
     }
@@ -440,9 +440,10 @@
     }
 
     /*배너*/
-   #ban {
-    height: 145px;
-}
+    #ban {
+        height: 145px;
+    }
+
     /*배너글*/
     #tit {
         font-size: 11px;
@@ -499,9 +500,10 @@
     /*아떼*/
     .athe {
 
-    margin-top: 130px;
+        margin-top: 130px;
 
-}
+    }
+
     .atheline {
         display: none;
     }
@@ -572,7 +574,7 @@
     }
 
     .pbox_txt p {
-        top: 111%;
+        top: 117%;
 
     }
 
@@ -603,18 +605,94 @@
 
 
     .review_all {
-        padding: 6px 60px 6px 11px;
+        padding: 6px 30px 6px 8px;
         border: 1px solid #767274;
         font-size: 10px;
     }
 
     .scroll {
-        left: 58%;
-        bottom: 3%;
+        left: 66%;
+        bottom: 4%;
         opacity: 1;
         animation: none;
     }
 
+
+    /*인스타그램*/
+    .instar h2 {
+
+        top: -32px;
+    }
+
+    .swiper-container {
+
+        height: 413px;
+
+    }
+
+    /*푸터영역*/
+    footer {
+        padding-bottom: 30px;
+    }
+
+    .footer_wrap {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .lbox img {
+        width: 25%;
+        margin: 20px 0 0px 40%;
+    }
+
+
+    .cotus {
+        display: none;
+
+    }
+
+
+    .lbox span {
+        display: none;
+    }
+
+    /*중간박스*/
+    .mbox {
+        margin-top: 23px;
+        line-height: 1.4;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /*3번째박스*/
+    .rbox {
+        width: 100%;
+            margin-top: 17px;
+    }
+
+    .top_btn {
+
+        right: 0;
+
+
+    }
+
+
+    .sns_box {
+        position: relative;
+        left: -35%;
+    }
+
+    .sns_box a {
+        margin-bottom: 41px;
+
+    }
+
+    .link {
+
+        left: 22%;
+
+    }
 
 
 
