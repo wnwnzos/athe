@@ -8,7 +8,7 @@ $(function () { // jQB ///////////////////////////
     $(".wrap").smoothWheel();
 
 
-   
+
 
 
 
@@ -130,6 +130,16 @@ $(function () { // jQB ///////////////////////////
 
 
 
+    // 모달창 스크롤막기
+    $(document).on('click', '.hamburger', function () {
+        $.fn.fullpage.setAllowScrolling(false);
+        $.fn.fullpage.setKeyboardScrolling(false);
+    });
+
+    $(document).on('click', '#cbtn', function () {
+        $.fn.fullpage.setAllowScrolling(true);
+        $.fn.fullpage.setKeyboardScrolling(true);
+    });
 
 
 
@@ -153,10 +163,10 @@ $(function () { // jQB ///////////////////////////
     }); ///////////////// click ////////////////////////////
 
 
-    
-    
-    
-    
+
+
+
+
 
 
 

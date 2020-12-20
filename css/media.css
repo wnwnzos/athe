@@ -6,7 +6,26 @@
         font-size: 13px;
     }
 
-
+    /*비디오*/
+    .vid{
+        height: auto;
+    }
+    #video_bg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+    .mouse{
+        display: none;
+    }
+    /*헤더*/
+header {
+    height: 5%;
+}
+    /*로고*/
+    .logo {
+    top: .5vh;
+}
     /*로고사이즈*/
     .logo img {
         width: 27%;
@@ -16,6 +35,7 @@
     .hamburger {
         width: 46px;
         height: 19px;
+        top: 1.5vh;
     }
 
 
@@ -42,11 +62,20 @@
         margin-bottom: 0;
     }
 
-
+/*베너*/
     #ban {
 
         height: 378px;
+        position: relative;
+        top: -5px;
     }
+    .sbox {
+    width: 100%;
+}
+    /*컨텐츠 텍스트 공동*/
+.txt p {
+    font-size: 1.2rem;
+}
 
 
 
@@ -67,9 +96,10 @@
 
 
 
-
     /*아떼*********************************************/
-
+.athe li > .txt {
+    margin: 146px 0 0px 75px;
+}
 
 
 
@@ -140,7 +170,7 @@
 
     /*리뷰영역*/
     .review {
-
+    background-size: contain;
         height: 50%;
     }
 
@@ -214,6 +244,14 @@
         display: block;
     }
 
+    
+    /*product.html********************************************/
+    /*헤더영여역*/
+.header {
+    height: 100px;
+}
+    
+    
 
 }
 
@@ -234,7 +272,7 @@
 
     /*헤더영역*/
     header {
-        height: 317px;
+        height: 56px;
     }
 
     .mouse {
@@ -242,13 +280,16 @@
     }
 
     /*메뉴클릭시팝업창*/
+    .menu {
+    background-position: 18%;
+}
     .mlist li {
         font-size: 55px;
     }
 
     .mlist {
-        margin-top: 23%;
-        margin-left: 56%;
+       margin-top: 43%;
+    margin-left: 60%;
     }
 
 
@@ -356,6 +397,8 @@
     .pbox_inner .pbox_list.on > span::after {
 
         right: 46%;
+        width: 35px;
+        height: 35px;
 
     }
 
@@ -375,7 +418,7 @@
 
 
     .pbox_txt p {
-        top: 103%;
+        top: 115%;
         font-size: 10px;
     }
 
@@ -388,6 +431,12 @@
 
         margin: 14% auto 10px auto;
     }
+    
+    /*쿠션*/
+    .cushionimg {
+    top: -21px;
+    left: -46px;
+}
 
 
     /*푸터영역*/
@@ -410,8 +459,17 @@
         line-height: 40px;
         margin-top: 7%;
     }
+    
+    .link {
+    width: 118%;
+}
 
+    
 
+    
+    
+    
+    
 }
 
 /*태블릿*/
@@ -421,12 +479,22 @@
 
 @media only screen and (max-width:480px) {
     header {
-        height: 200px;
+        height: 40px;
     }
 
     html {
         font-size: 10px;
     }
+    
+    /*메뉴창*/
+    .menu {
+    background-position: 58%;
+}
+    .mlist {
+    text-align: center;
+    margin-top: 38%;
+    margin-left: 0%;
+}
 
     /*로고*/
     .logo img {
@@ -584,11 +652,11 @@
     }
 
     .lb {
-        left: 25%;
+        left: 19%;
     }
 
     .rb {
-        right: 25%;
+        right: 19%;
     }
 
 
@@ -642,7 +710,6 @@
 
     .lbox img {
         width: 25%;
-        margin: 20px 0 0px 40%;
     }
 
 
@@ -689,10 +756,18 @@
     }
 
     .link {
-
+    width: 65%;
         left: 22%;
 
     }
+    
+    
+    /*product.html*********************************/
+    .header {
+    height: 50px;
+}
+    
+    
 
 
 
@@ -703,104 +778,4 @@
 
 
 
-/*모바일*/
-@media only screen and (max-width:360px) {
-    html {
-        font-size: 8px;
-    }
 
-    /*헤더영역*/
-    header {
-        height: 151px;
-    }
-
-    /*로고*/
-    .logo {
-        left: 2%;
-        top: 3%;
-    }
-
-    .logo img {
-        width: 15%;
-    }
-
-    /*햄버거버튼*/
-    .hamburger {
-        width: 21px;
-        height: 14px;
-    }
-
-    .hamburger div {
-
-        height: 2px;
-
-    }
-
-    .hamburger {
-        right: 3%;
-        top: 3%;
-    }
-
-    /*동영상*/
-    #video_bg {
-
-        object-fit: cover;
-    }
-
-
-    /*배너*/
-    #ban {
-        height: 133px;
-    }
-
-    /*자연주의*/
-    .nat_box li > .txt {
-        margin: 10% 0 0 0;
-        width: 100%;
-    }
-
-    .nat_box li > .txt h2 {
-        left: 0;
-
-    }
-
-    .nat_box li > .txt p {
-        left: 0;
-        font-size: 13px;
-    }
-
-    .nat_img {
-        margin: -30% 0 0 1%;
-        background-size: 74%;
-    }
-
-    /*아떼*/
-    .athe_box li > .txt {
-        margin: -88% 0 0 0;
-        width: 100%;
-
-    }
-
-    .athe_box li > .txt h2 {
-        left: 0;
-
-    }
-
-    .athe_box li > .txt p {
-        left: 0;
-        font-size: 13px;
-    }
-
-    .athe_img {
-        margin: -58% 0 0 5%;
-        background-size: 70%;
-    }
-
-
-
-
-
-
-
-
-}

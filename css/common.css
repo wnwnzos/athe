@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*인코딩형식*/
 /* athe 공통 CSS - common.css */
-
+@import url(media.css);
 
 .wrap {
     width: 100%;
@@ -27,7 +27,7 @@
 .logo {
     position: absolute;
     left: 1%;
-    top: 2%;
+    top: 2vh;
 }
 
 .logo img {
@@ -54,7 +54,7 @@
 .hamburger {
     position: absolute;
     right: 1%;
-    top: 2%;
+    top: 2vh;
     display: -webkit-box;
     display: flex;
     align-self: center;
@@ -166,6 +166,7 @@
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
     -webkit-text-fill-color: transparent;
     letter-spacing: 1px;
+    width: 100px;
 }
 
 /*메뉴오버시*/
@@ -181,8 +182,8 @@
     display: none;
 }
 
-.nolist:hover p {
-    display: inline-block;
+.nolist > a:hover p {
+    display: inline;
 }
 
 
@@ -197,6 +198,7 @@ footer {
     /*    outline: 1px solid #000;*/
     width: 90%;
     margin: 0 auto;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
 
@@ -204,8 +206,10 @@ footer {
 
 
 /*푸터왼쪽박스*/
+.lbox{
+    text-align: center;
+}
 .lbox img {
-    margin: 26px 0 0 0;
     width: 50%;
 }
 
@@ -236,7 +240,6 @@ footer {
 
 /*푸터중간박스*/
 .mbox {
-    margin-top: 37px;
     line-height: 2;
     font-size: 15px;
 }

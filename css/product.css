@@ -72,15 +72,8 @@
     margin-right: 2%;
     margin-bottom: 2%;
 }
-.prl li:nth-child(3){
-    margin-right: 0;
-}
-.prl li:nth-child(4),.prl li:nth-child(5){
-    margin-bottom: 0;
-}
-.prl li:nth-child(6){
-    margin: 0;
-}
+
+
 /*립밤*/
 .lip {
     background: url(../images/lip_white.png)no-repeat;

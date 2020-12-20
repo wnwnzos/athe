@@ -10,11 +10,34 @@
 
 
 
-
-
-
 /*헤더영역*/
-header {
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 10%;
+    z-index: 99;
+       background-color:rgba(0,0,0,.1);
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+
+}
+.down{
+   background-color:rgba(0,0,0,.8);
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+
+}
+
+
+
+/*동영상*/
+.vid {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -211,7 +234,7 @@ section {
 }
 
 .nat_img {
-    background: url(../images/ni.jpg) no-repeat fixed 100% 50%;
+    background: url(../images/ni.jpg) no-repeat 100% 50%;
 }
 
 .nat_box li > .txt {
@@ -266,8 +289,8 @@ section {
 }
 
 .athe_img {
-    background: url(../images/pink_pact.jpg) no-repeat fixed 0 100%;
-    background-position: 10% 100%
+    background: url(../images/pink_pact.jpg) no-repeat;
+    
 }
 
 
@@ -284,6 +307,7 @@ section {
 /*제품리스트 뒷배경*/
 .plant_left {
     background: url(../images/plant_left.png)no-repeat fixed;
+    background-size: 38%;
     width: 50%;
     height: 145%;
     position: absolute;
@@ -529,7 +553,7 @@ section {
 }
 
 .abtn img {
-    width: 100%;
+    width: 90%;
 }
 
 .lb {
