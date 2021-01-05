@@ -25,7 +25,7 @@ $(function () { // jQB ///////////////////////////
     // fade효과로 계속 넘어가게 setInterval함수를 사용
     // setInterval(함수,시간)
     // 대상: #ban img
-    var tg = $("#ban img");
+    var tg = $("#ban li");
     var seq = 0; //순번
 
     setInterval(function () {
@@ -67,7 +67,7 @@ $(function () { // jQB ///////////////////////////
 
     // 하단 이동 버튼
     var winH = $(window).height();
-    $(".mouse").click(function () {
+    $("#scroll-down").click(function () {
         $(".wrap").animate({
             scrollTop: winH + "px"
         }, 800, "easeOutQuint", function () {

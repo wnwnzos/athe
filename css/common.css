@@ -3,13 +3,32 @@
 /* athe 공통 CSS - common.css */
 @import url(media.css);
 
-.wrap {
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
+@font-face {
 
+    font-family: mon;
+    src: url('../fonts/montserrat/Montserrat.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat.woff') format('woff');
 
 }
+
+
+body,html{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+
+
 
 
 
@@ -37,6 +56,8 @@
 
 
 /*메뉴클릭시 나오는 창******************************/
+
+
 .menu {
     position: fixed;
     width: 100%;
@@ -54,7 +75,7 @@
 .hamburger {
     position: absolute;
     right: 1%;
-    top: 2vh;
+    top: 3.5vh;
     display: -webkit-box;
     display: flex;
     align-self: center;
@@ -157,7 +178,7 @@
 
 .mlist li {
 
-    font-size: 5.625rem;
+    font-size: 5vw;
     font-weight: bold;
     line-height: 2;
 }
@@ -206,9 +227,10 @@ footer {
 
 
 /*푸터왼쪽박스*/
-.lbox{
+.lbox {
     text-align: center;
 }
+
 .lbox img {
     width: 50%;
 }

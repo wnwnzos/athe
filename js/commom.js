@@ -1,6 +1,11 @@
 /*공통JS*/
 
+
+
+
 $(function () { // jQB ///////////////////////////
+
+
 
 
 
@@ -103,43 +108,32 @@ $(function () { // jQB ///////////////////////////
 
 
 
+    // 메뉴햄버거버튼 클릭시 메뉴창 보이기 //////////////////////////
 
 
-
-    // 메뉴햄버거버튼 클릭시 메뉴창 보이기 ///////////////////////////
     $(".hamburger").click(function () {
+    
         $(".menu").fadeIn(500);
 
 
-        $("body").css({
-            overflowY: "hidden"
-        });
+
+
+
     }); // click //////////////////////////////////////
 
 
     // 햄버거버튼 클릭시 메뉴창 숨기기
     $("#cbtn").click(function () {
+
+
         $(".menu").fadeOut(500);
 
-        $("body").css({
-            overflowY: "auto"
-        }); // css /////////
+
 
 
     }); // click ///////////////////////////////////////
 
 
-
-    // 모달창 스크롤막기
-    $(document).on('click', '.hamburger', function () {
-        $.fn.fullpage.setAllowScrolling(false);
-        $.fn.fullpage.setKeyboardScrolling(false);
-    });
-
-    $(document).on('click', '#cbtn', function () {
-        $.fn.fullpage.setAllowScrolling(true);
-        $.fn.fullpage.setKeyboardScrolling(true);
-    });
 
 
 

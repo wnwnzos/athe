@@ -57,78 +57,49 @@ header{
 
 
 
-/*마우스모양애니메이션***************************************/
-
-.mouse {
-    display: block;
+/*스크롤다운***************************************/
+#scroll-down{
+    font-size: 12px;
+    line-height: 20px;
     position: absolute;
-    width: 33px;
-    height: 52px;
-    bottom: 3%;
+    bottom: 50px;
     left: 50%;
-    border: 1.5px solid rgba(255, 255, 255, 0.7);
-    border-radius: 16px;
-    cursor: pointer;
+    margin-right: -100px;
+    transition: all .2s ease;
+    z-index: 2;
+    font-family: mon;
 }
 
-.mouse::after {
+#scroll-down.text-light{
+    color: #fff;
+    letter-spacing: .1em;
+}
+#scroll-down span{
+
     display: block;
-    content: '';
+    width: 34px;
+    height: 20px;
     position: absolute;
-    bottom: 30px;
     left: 50%;
-    width: 4px;
-    height: 10px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 2px;
-
-    -webkit-animation: sdb 2s infinite;
-    animation: sdb 2s infinite;
-
+    top: 100%;
+    transform: translateX(-50%);
+/*    outline: 1px solid blue;*/
+    background: url(../images/scroll_line.svg)no-repeat;
+    background-size: cover;
+    animation: ani 2s ease-in infinite;
 }
 
-@-webkit-keyframes sdb {
-    0% {
-        -webkit-transform: translate(0, 0);
-        opacity: 0;
+@keyframes ani {
+  0%   	{ 
+      top: 100%
     }
-
-    40% {
-        opacity: 1;
+  50% 	{ 
+      top: 180%
     }
-
-    80% {
-        -webkit-transform: translate(0, 20px);
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
+  100% 	{ 
+      top: 100%
     }
 }
-
-@keyframes sdb {
-    0% {
-        transform: translate(0, 0);
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 1;
-    }
-
-    80% {
-        transform: translate(0, 20px);
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-/*마우스모양애니메이션****************************/
-
 
 /*배너*/
 #ban {
@@ -136,30 +107,43 @@ header{
     /*부모자격*/
     /*    outline: 1px solid red;*/
     width: 100%;
-    height: 712px;
+    height: 50vh;
 
 
 }
-
-#ban img {
+#ban li{
+        width: 100%;
+height: 50vh;
     position: absolute;
     /*모든이미지 겹치게*/
-    opacity: 0;
+    top: 0;
+    left: 0;
     transition: opacity .6s;
-    width: 100%;
-
-
+      opacity: 0;
+}
+#ban li:nth-child(1){
+        background: url(../images/ban1.png)no-repeat;
+    background-size: cover;
+    z-index: 30;
+}
+#ban li:nth-child(2){
+        background: url(../images/ban2.png)no-repeat;
+    background-size: cover;
+    z-index: 20;
+}
+#ban li:nth-child(3){
+        background: url(../images/ban3.png)no-repeat;
+    background-size: cover;
+    z-index: 10;
 }
 
+
 /*class="on"이 적용된 경우 보이고 맨위*/
-#ban img.on {
+#ban li.on {
     opacity: 1;
     z-index: 1;
 }
 
-#ban .active {
-    z-index: 1;
-}
 
 /*배너글*/
 #tit {
@@ -169,7 +153,7 @@ header{
     left: 60%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 40;
     text-align: center;
     font-family: 'iropke batang', sans-serif;
     font-size: 1.25rem;
@@ -725,6 +709,7 @@ section {
 .instar h2 b {
     font-size: 2.875rem;
     font-weight: 1;
+    letter-spacing: 2px;
 }
 
 
