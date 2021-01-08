@@ -75,7 +75,7 @@ body,html{
 .hamburger {
     position: absolute;
     right: 1%;
-    top: 3.5vh;
+    top: 2vh;
     display: -webkit-box;
     display: flex;
     align-self: center;
