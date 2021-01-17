@@ -262,6 +262,7 @@ footer {
 
 /*푸터중간박스*/
 .mbox {
+    letter-spacing: 2px;
     line-height: 2;
     font-size: 15px;
 }
@@ -314,7 +315,6 @@ footer {
     font-size: 0.9375rem;
     position: absolute;
     left: 0;
-    bottom: 2%;
 }
 
 .link li {
@@ -327,6 +327,7 @@ footer {
 
 .link a {
     color: #fff;
+    letter-spacing: 1px;
 }
 
 

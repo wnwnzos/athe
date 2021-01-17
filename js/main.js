@@ -7,27 +7,6 @@ $(function () { // jQB ///////////////////////////
     // 2. 아떼 이미지
     $(".athe_img").parallax("100%", 0.2);
 
-    /*상단배너자동넘김*****************************/
-
-    // fade효과로 계속 넘어가게 setInterval함수를 사용
-    // setInterval(함수,시간)
-    // 대상: #ban img
-    var tg = $("#ban li");
-    var seq = 0; //순번
-
-    setInterval(function () {
-
-        // 순번증가
-        seq++;
-        if (seq === 4) seq = 0;
-
-        // 대상을 순서대로 class="on"주기
-        tg.eq(seq).addClass("on")
-            .siblings().removeClass("on");
-
-
-    }, 3000);
-
 
 
 
