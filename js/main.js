@@ -33,7 +33,8 @@ $(function () { // jQB ///////////////////////////
 
     /*제품리스트**********************/
     var pin = $(".pbox_inner");
-    $(".rb").click(function () {
+    $(".rb").click(function (e) {
+        e.preventDefault();
         pin.append($(pin).find(".pbox_list").first());
 
         // 클래스 제거 넣기(중앙대상:3번째 eq(2))
@@ -42,7 +43,8 @@ $(function () { // jQB ///////////////////////////
 
     }); //////// click //////////////////
 
-    $(".lb").click(function () {
+    $(".lb").click(function (e) {
+        e.preventDefault();
         pin.prepend($(pin).find(".pbox_list").last());
 
         // 클래스 제거 넣기(중앙대상:3번째 eq(2))

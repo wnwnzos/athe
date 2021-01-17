@@ -1,5 +1,20 @@
 /*메인 미디어쿼리 - media.css*/
 /*피시*/
+@media only screen and (max-width: 1500px){
+    
+    .instar {
+    height: 550px;
+}
+    .swiper-container {
+    right: 0;
+    top: 11vw;
+}
+    
+    
+    
+    
+}
+
 @media only screen and (max-width: 1024px) {
 
     html {
@@ -69,6 +84,9 @@ header {
         position: relative;
         top: -5px;
     }
+    #ban li {
+    height: 30vh;
+}
     .sbox {
     width: 100%;
 }
@@ -171,7 +189,7 @@ header {
     /*리뷰영역*/
     .review {
     background-size: contain;
-        height: 50%;
+        height: 40vw;
     }
 
     .review_all {

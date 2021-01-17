@@ -12,17 +12,9 @@
 }
 
 
-body,html{
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
-
-.wrap{
+.wrap {
     width: 100%;
-    height: 100%;
     overflow-x: hidden;
 
 }
@@ -38,7 +30,13 @@ body,html{
     width: 100%;
     height: 300px;
     background: url(../images/header_bg.png)no-repeat center/cover;
+    background-color: rgba(100, 99, 99, 0.49);
 }
+
+/*헤더 높이와 같게*/
+.nav-up { top: -300px;  }
+
+
 
 
 
@@ -211,18 +209,18 @@ body,html{
 /*푸터**************************************/
 footer {
     background-color: #AF655A;
-
+    height: 12vw;
     color: #fff;
 }
 
 .footer_wrap {
     /*    outline: 1px solid #000;*/
     width: 90%;
+    height: 100%;
     margin: 0 auto;
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 
@@ -233,11 +231,13 @@ footer {
 
 .lbox img {
     width: 50%;
+    margin-bottom: 1vw;
 }
 
 .cotus {
     font-size: 1.25rem;
     letter-spacing: 2px;
+    margin-bottom: 1vw;
 }
 
 .cotus big {
@@ -342,9 +342,11 @@ footer {
 
 
 @keyframes tbtn {
-    from {}
+    0 {
+        top:0;
+    }
 
-    to {
-        top: 0;
+    50% {
+        top: 10%;
 
     }

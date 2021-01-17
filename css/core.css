@@ -4,21 +4,21 @@
 
 
 /*스크롤바*/
-.wrap::-webkit-scrollbar {
+html::-webkit-scrollbar {
     width: 5px;
 }
 
-.wrap::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
     background: #666;
     border-radius: 5px;
 }
 
-.wrap::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track {
     background: #ddd;
     border-radius: 5px;
 }
 
-.wrap{
+html{
     scrollbar-face-color: #333;
     scrollbar-shadow-color: #000;
     scrollbar-highlight-color: #666;

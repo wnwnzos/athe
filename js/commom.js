@@ -8,9 +8,8 @@ $(function () { // jQB ///////////////////////////
 
 
 
-
-
-    $(".wrap").smoothWheel();
+    // 부드러운 스크롤 함수 호출!
+    startSS();
 
 
 
@@ -51,7 +50,7 @@ $(function () { // jQB ///////////////////////////
     //console.log("4번기준:" + (tpos[3] - 1000));
 
     //// 스크롤 액션 ////////////////////////////////
-    $(".wrap").scroll(function () {
+    $(window).scroll(function () {
         var scTop = $(this).scrollTop();
 
         //console.log("스위:" + scTop);
@@ -112,7 +111,7 @@ $(function () { // jQB ///////////////////////////
 
 
     $(".hamburger").click(function () {
-    
+
         $(".menu").fadeIn(500);
 
 
@@ -123,8 +122,8 @@ $(function () { // jQB ///////////////////////////
 
 
     // 햄버거버튼 클릭시 메뉴창 숨기기
-    $("#cbtn").click(function () {
-
+    $("#cbtn").click(function (e) {
+        e.preventDefault();
 
         $(".menu").fadeOut(500);
 
